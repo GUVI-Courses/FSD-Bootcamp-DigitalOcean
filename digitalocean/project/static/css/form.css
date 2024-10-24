@@ -1,0 +1,64 @@
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 0.6rem;
+    padding: 0px 8px;
+    padding-bottom: 8px;
+}
+
+#hom {
+    margin-left: 0px;
+}
+
+.container {
+    border: 2px solid white;
+    margin: 50px 50px;
+    padding: 10px;
+    width: 68%;
+    border-radius: 28px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.form-group input {
+    font-family: 'Bree Serif';
+    text-align: center;
+    display: block;
+    width: 220px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 13px auto;
+    font-size: 18px;
+    border-radius: 57px;
+}
+
+#drop {
+    font-family: 'Bree Serif';
+    text-align: center;
+    display: block;
+    width: 220px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 13px auto;
+    font-size: 18px;
+    border-radius: 57px;
+}
+
+.btn1 {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-family: 'Bree Serif';
+    text-align: center;
+    display: block;
+    width: 156px;
+    padding: 1px;
+    margin: 13px auto;
+    font-size: 18px;
+    border-radius: 57px;
+}

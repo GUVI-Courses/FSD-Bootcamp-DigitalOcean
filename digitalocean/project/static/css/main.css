@@ -1,0 +1,417 @@
+/* css RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: black; */
+    /* font-family: 'Baloo Bhai', cursive; */
+    /* background-color: #2d3436; */
+    height: 100vh;
+/* background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); */
+}
+
+.container {
+    border: 2px solid white;
+    margin: 77px 54px;
+    padding: 10px;
+    width: 25%;
+    border-radius: 28px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.form-group input {
+    font-family: 'Bree Serif';
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 14px auto;
+    font-size: 20px;
+    border-radius: 57px;
+}
+
+#drop {
+    font-family: 'Bree Serif';
+    text-align: center;
+    display: block;
+    width: 320px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 14px auto;
+    font-size: 20px;
+    border-radius: 57px;
+}
+
+
+/* css variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* navigation bar */
+
+.navab {
+    margin: 0px auto;
+    display:block;
+
+}
+
+#footer1 {
+    color:grey;
+}
+#navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0px;
+    /* justify-content: center; */
+}
+
+
+/* logo and image  */
+
+
+/* list styling */
+
+#logo img {
+    margin: 7px 21px;
+    height: 59px;
+    filter: invert(100%);
+}
+
+#navbar ul {
+    display: flex;
+    /* font-family: 'Baloo Bhai'; */
+}
+
+#hom {
+    margin-left: 375px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.0rem;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* HOME SECTION */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../images/ar.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 580px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif';
+    font-size: 1.8rem;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Bree Serif';
+}
+
+
+/* services section */
+
+#services {
+    margin: 34px;
+    display: flex;
+    
+}
+
+#services .box {
+    border: 2px solid black;
+    padding: 24px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: white;
+    transition-duration: 1s;
+    transition: all 0.5s ease-in-out;
+}
+
+#services .box:hover {
+    background-color: black;
+    transform: scale(0.8);
+}
+
+#services .box:hover p {
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 15px 8px 15px 0px;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+
+#services .box h2 {
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+
+#services .box:hover h2 {
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+
+#services .box h2 {
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+
+
+/* products */
+
+#products-section {
+    /* height: 250px; */
+    position: relative;
+    margin-bottom: 35px;
+    animation-name: anees;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anees {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: grey;
+    }
+    50% {
+        background-color: lightgray;
+    }
+    100% {
+        background-color: darkgray;
+    }
+}
+
+#products-section::before {
+    content: "";
+    position: absolute;
+    background: url('../images/key1.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#products img {
+    height: 150px;
+    border-radius: 25px;
+}
+
+.items {
+    padding: 14px;
+}
+
+#products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-container h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#contact h1 {
+    color: white;
+}
+
+#products-section h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif';
+    font-size: 1.5rem;
+    padding: 25px;
+}
+
+
+/* utility classes */
+
+.h-primary {
+    font-size: 1.5rem;
+    padding: 0px;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+    padding: 12px;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 9px 25px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn1 {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 300px;
+    padding: 10px;
+    margin: 14px auto;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* contact section */
+
+
+/* Contact Section */
+
+#contact {
+    position: relative;
+    
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../images/ar.png') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box input:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+footer {
+    background: black;
+    color: white;
+    /* position: fixed; */
+    /* width: 100%; */
+    text-align: center;
+    /* bottom: 0px; */
+    padding: 25px 20px;
+    font-size: 12px;
+}
+
+#footer2 {
+    background: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding: 25px 20px;
+    font-size: 12px;
+}
